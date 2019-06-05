@@ -1,0 +1,73 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+        height: 40px; // 38 -> 40
+        line-height: 40px;
+}
+
+input[type=submit] {
+        line-height: 40px;
+}
+
+/* 表单模块 */
+.form-module {
+     .tcn-r-form {
+      //width: 310px;  // 去掉宽度让其自动撑开
+     }
+}
+
+
+/* 面授-表单 */
+.ms-course {
+    input { // 去掉整个input，因为与上面.tcn-r-from重复了
+        width: 100%;
+        border: 1px solid #dadada;
+        height: 44px;
+        line-height: 44px;
+        margin-bottom: 14px;
+        background-color: #f7f7f7;
+    }
+}
+
+.hot-news 和 .organization {
+ width: 390px; // 350 -> 390
+}
+
+.article-cont {
+  // 去掉宽度，让其自动撑开
+}
+
+/* 咨询列表-表单, 软文终端-表单 */
+  .zx{
+    .tcn-r-form{
+      li{
+        cursor: pointer; // 应为li 里面有 input 和 i, 因为这个于 .from-module不同，按钮里面有圆圈和箭头
+      }
+    }
+  }

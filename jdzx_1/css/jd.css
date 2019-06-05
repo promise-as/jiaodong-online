@@ -37,8 +37,6 @@ blockquote,
 th,
 td {
   font-size: 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 a:hover {
@@ -354,7 +352,6 @@ input[type="submit"] {
 .jd-head .jd-head-l .jd-address .jd-act {
   border: solid 1px transparent;
   text-align: center;
-  padding-left: 4px;
 }
 
 .jd-head .jd-head-l .jd-address .jd-act span {
@@ -369,6 +366,7 @@ input[type="submit"] {
 
 .jd-head .jd-head-l .jd-address .jd-act .jd-address-icon-1 {
   vertical-align: middle;
+  width: 10px;
   width: 12px;
   height: 16px;
   background: url("../images/css_sprites.png") -336px -116px;
@@ -489,8 +487,7 @@ input[type="submit"] {
 .jd-head .jd-head-r .jd-search input[type=text] {
   float: left;
   width: 250px;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
   border: solid 1px #e6e6e6;
   padding-left: 20px;
 }
@@ -499,7 +496,6 @@ input[type="submit"] {
   float: left;
   width: 50px;
   height: 40px;
-  line-height: 40px;
   background-color: #0064af;
   border-radius: 2px;
   color: #ffffff;
@@ -535,14 +531,15 @@ input[type="submit"] {
   height: 40px;
 }
 
-.jd-nav .jd-nav-menu {
-  position: relative;
-}
-
 .jd-nav .jd-nav-menu li {
   float: left;
   height: 40px;
+  position: relative;
   z-index: 100;
+}
+
+.jd-nav .jd-nav-menu li:nth-last-child(1) .jd-l-2, .jd-nav .jd-nav-menu li:nth-last-child(2) .jd-l-2, .jd-nav .jd-nav-menu li:nth-last-child(3) .jd-l-2 {
+  right: 0;
 }
 
 .jd-nav .jd-nav-menu li .jd-l-1 {
@@ -562,7 +559,6 @@ input[type="submit"] {
           box-sizing: border-box;
   display: none;
   position: absolute;
-  left: 0;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.19);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.19);
   border-radius: 0px 0px 4px 4px;
@@ -719,6 +715,7 @@ input[type="submit"] {
 }
 
 .jd-r .form-module .tcn-r-form {
+  width: 310px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 20px 20px 12px;
@@ -727,7 +724,7 @@ input[type="submit"] {
 .jd-r .form-module .tcn-r-form input {
   width: 100%;
   border: 1px solid #dadada;
-  height: 44px;
+  height: 42px;
   line-height: 44px;
   margin-bottom: 14px;
   background-color: #f7f7f7;
@@ -835,9 +832,19 @@ input[type="submit"] {
 }
 
 .jd-r .ms-course .tcn-r-form {
+  width: 310px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 20px 20px 12px;
+}
+
+.jd-r .ms-course .tcn-r-form input {
+  width: 100%;
+  border: 1px solid #dadada;
+  height: 42px;
+  line-height: 44px;
+  margin-bottom: 14px;
+  background-color: #f7f7f7;
 }
 
 .jd-r .ms-course .tcn-r-form .tcn-submit {
@@ -887,7 +894,7 @@ input[type="submit"] {
 
 .jd-r .hot-news {
   padding: 20px 20px 2px;
-  width: 390px;
+  width: 350px;
   border: solid 1px #eeeeee;
   margin-bottom: 24px;
 }
@@ -966,7 +973,7 @@ input[type="submit"] {
 
 .jd-r .organization {
   padding: 20px 20px 2px;
-  width: 390px;
+  width: 350px;
   border: solid 1px #eeeeee;
   margin-bottom: 24px;
 }
@@ -1096,13 +1103,9 @@ input[type="submit"] {
   background: url("../images/article_icon1.png") no-repeat;
 }
 
-.jd-r .zx .tcn-r-form li {
-  cursor: pointer;
-}
-
 .jd-r .refer-hot-news {
   padding: 20px 20px 2px;
-  width: 390px;
+  width: 350px;
   border: solid 1px #eeeeee;
   margin-bottom: 24px;
 }
@@ -1249,6 +1252,7 @@ input[type="submit"] {
 }
 
 .jd-r .article .article-cont {
+  width: 310px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 20px 20px 12px;
@@ -1319,7 +1323,7 @@ input[type="submit"] {
 
 .jd-r .live {
   padding: 20px 20px 2px;
-  width: 390px;
+  width: 350px;
   border: solid 1px #eeeeee;
   margin-bottom: 24px;
 }
